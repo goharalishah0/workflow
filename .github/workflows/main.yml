@@ -1,0 +1,12 @@
+name: db backup
+
+on:
+  schedule:
+    - cron: "27 12 * * *"
+
+jobs:
+  execute-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print message
+        run: echo "backup done"
