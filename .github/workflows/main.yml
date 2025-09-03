@@ -2,11 +2,11 @@ name: db backup
 
 on:
   schedule:
-    - cron: "0 9 3 9 *"
+    - cron: "0 9 * * *"
 
 jobs:
   execute-run:
     runs-on: ubuntu-latest
     steps:
       - name: print message
-         run: echo "backup done"
+        run: echo "backup done"
